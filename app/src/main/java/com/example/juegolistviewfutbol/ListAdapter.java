@@ -14,8 +14,9 @@ class ListaAdapter extends BaseAdapter {
     Context context;
     String[] jugadores;
     int[] imagenes;
-    int [] puntuacion;
+    public static int [] puntuacion;
     LayoutInflater inflater;
+    public static String jugadorElegido;
 
     public ListaAdapter(Context context, String[] titulos, int[] imagenes, int [] puntuacion) {
         this.context = context;
@@ -59,8 +60,8 @@ class ListaAdapter extends BaseAdapter {
         // Capture position and set to the TextViews
         txtTitle.setText(jugadores[position]);
         imgImg.setImageResource(imagenes[position]);
-        puntos.setText("0");
-
+        puntos.setText(String.valueOf(puntuacion[position]));
+        jugadorElegido = String.valueOf(jugadores[position]);
         return itemView;
     }
 }

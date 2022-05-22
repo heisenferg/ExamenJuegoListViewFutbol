@@ -26,7 +26,7 @@ public class segundaLista extends AppCompatActivity {
             R.drawable.mbappe,
             R.drawable.messi
     };
-    int [] puntuacion = {0,0,0,0,0};
+    public static int [] puntuacion = {0,0,0,0,0};
     String[] jugadores= {"Cristiano Ronaldo", "Benzema", "Luka Modric", "Mbappe", "Messi"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +52,7 @@ public class segundaLista extends AppCompatActivity {
     }
 */
     public void rellenoArray(){
+        PlaceholderContent.ITEMS.clear();
         for (int i =0; i<5; i++){
             imagenJugador = BitmapFactory.decodeResource(getResources(),fotos[i]);
             Jugador jugador = new Jugador(imagenJugador, jugadores[i], puntuacion[i]);

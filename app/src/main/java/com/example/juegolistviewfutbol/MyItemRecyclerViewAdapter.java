@@ -42,7 +42,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         holder.mItem = mValues.get(position);
         holder.mPhoto.setImageBitmap(mValues.get(position).getFotoJugador());
         holder.mNombre.setText(mValues.get(position).getNombreJugador());
-        holder.mPuntuacion.setText(String.valueOf(segundaLista.puntos));
+        holder.mPuntuacion.setText(String.valueOf(mValues.get(position).getPuntosJugador()));
 
         holder.mPhoto.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
