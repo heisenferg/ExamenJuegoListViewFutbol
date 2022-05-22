@@ -60,7 +60,7 @@ class ListaAdapter extends BaseAdapter {
         // Capture position and set to the TextViews
         txtTitle.setText(jugadores[position]);
         imgImg.setImageResource(imagenes[position]);
-        puntos.setText(String.valueOf(puntuacion[position]));
+        puntos.setText(String.valueOf(primeraLista.puntuacion[position]));
         jugadorElegido = String.valueOf(jugadores[position]);
         return itemView;
     }

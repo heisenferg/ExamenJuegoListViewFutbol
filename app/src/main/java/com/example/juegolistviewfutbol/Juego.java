@@ -127,54 +127,53 @@ moverPelota();
             derrota=true;
 
             if (segundaLista.jugadorElegido == "Cristiano Ronaldo"){
-                segundaLista.puntuacion[1] = puntos;
+                segundaLista.puntuacion[0] = puntos;
                 Intent o = new Intent(getContext(), segundaLista.class);
                 activity.startActivity(o);
             }
             if (segundaLista.jugadorElegido == "Benzema"){
-                segundaLista.puntuacion[2] = puntos;
+                segundaLista.puntuacion[1] = puntos;
                 Intent o = new Intent(getContext(), segundaLista.class);
                 activity.startActivity(o);
             }
             if (segundaLista.jugadorElegido == "Luka Modric"){
-                segundaLista.puntuacion[3] = puntos;
+                segundaLista.puntuacion[2] = puntos;
                 Intent o = new Intent(getContext(), segundaLista.class);
                 activity.startActivity(o);
             }
             if (segundaLista.jugadorElegido == "Mbappe"){
-                segundaLista.puntuacion[4] = puntos;
+                segundaLista.puntuacion[3] = puntos;
                 Intent o = new Intent(getContext(), segundaLista.class);
                 activity.startActivity(o);
             }
             if (segundaLista.jugadorElegido == "Messi"){
-                segundaLista.puntuacion[5] = puntos;
+                segundaLista.puntuacion[4] = puntos;
                 Intent o = new Intent(getContext(), segundaLista.class);
                 activity.startActivity(o);
             }
 
             if (primeraLista.jugadorElegido == "Mbappe"){
-                segundaLista.puntuacion[1] = puntos;
-                ListaAdapter.puntuacion[1] =puntos;
+                primeraLista.puntuacion[0] = puntos;
                 Intent o = new Intent(getContext(), primeraLista.class);
                 activity.startActivity(o);
             }
             if (primeraLista.jugadorElegido == "Messi"){
-                segundaLista.puntuacion[2] = puntos;
+                primeraLista.puntuacion[1] = puntos;
                 Intent o = new Intent(getContext(), primeraLista.class);
                 activity.startActivity(o);
             }
             if (primeraLista.jugadorElegido == "Benzemá!"){
-                segundaLista.puntuacion[3] = puntos;
+                primeraLista.puntuacion[2] = puntos;
                 Intent o = new Intent(getContext(), primeraLista.class);
                 activity.startActivity(o);
             }
             if (primeraLista.jugadorElegido == "Cristiano!"){
-                segundaLista.puntuacion[4] = puntos;
+                primeraLista.puntuacion[3] = puntos;
                 Intent o = new Intent(getContext(), primeraLista.class);
                 activity.startActivity(o);
             }
             if (primeraLista.jugadorElegido == "Luka Modric!"){
-                segundaLista.puntuacion[5] = puntos;
+                primeraLista.puntuacion[4] = puntos;
                 Intent o = new Intent(getContext(), primeraLista.class);
                 activity.startActivity(o);
             }

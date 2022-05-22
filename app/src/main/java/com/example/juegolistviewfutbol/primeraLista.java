@@ -24,7 +24,7 @@ public class primeraLista extends AppCompatActivity {
             R.drawable.cristiano,
             R.drawable.luka
     };
-     int [] puntuacion = {0,0,0,0,0};
+     public static int [] puntuacion = {0,0,0,0,0};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
